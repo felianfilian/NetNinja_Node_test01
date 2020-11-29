@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background-color: #00a3cc;
+            font-family: veranda;
+            color: #fff;
+            padding: 30px;
+        }
+
+        h1 {
+            font-size: 48px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        p, li {
+            font-size: 20px;
+            text-align: center;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="/home">HOME</a>
+    <a href="/contact">Contact</a>
+    <a href="/api/ninjas">Ninjas</a>
+    <h1>Welcome <%= person %></h1>
+    <p>Age: <%= data.age %></p>
+    <h2>Hobbies</h2>
+    <ul>
+        <% data.hobbies.forEach(function(item){ %>
+            <lI><%= item %></lI>
+        <% }); %>
+    </ul>
+</body>
+
+</html>
